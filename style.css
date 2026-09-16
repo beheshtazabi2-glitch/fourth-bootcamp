@@ -1,0 +1,1277 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Links */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Hero Section */
+
+.hero {
+    height: 100vh;
+    min-height: 600px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    background-image: url("https://images.openai.com/static-rsc-4/aOahL4ETCZX34SEsDdgtGoSGx-a4iTnbEwa_q4_mlre3LV32E0GQnmltohXH49yC2rlJI-pgZxcb7wX1UpLcgnBiHZiv90QQCaZF1pY5T7ao4Ih5w-vYLil0BIAlPQIuVrTi7TyFdIzEF2vTrJQlEF7ycf_q0uwyQsSSVNf6-go36_s-a9Or5rm6ROZcxIVA?purpose=inline");
+    background-size: cover;
+    background-position: center;
+    padding: 15px 7%;
+}
+
+
+/* Header */
+
+.header {
+    height: 50px;
+
+    background: white;
+
+    border-radius: 30px;
+
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+
+    color: #111;
+
+    position: relative;
+    z-index: 10;
+}
+
+
+/* Logo */
+
+.logo {
+    font-size: 13px;
+}
+
+.logo span {
+    font-weight: normal;
+}
+
+
+/* Navigation */
+
+nav {
+    display: flex;
+
+    gap: 25px;
+
+    margin-left: auto;
+    margin-right: 35px;
+}
+
+nav a {
+    font-size: 9px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+}
+
+
+/* Account Button */
+
+.account-button {
+    background: #06172d;
+
+    color: white;
+
+    padding: 10px 15px;
+
+    border-radius: 20px;
+
+    font-size: 8px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+/* Hero Content */
+
+.content {
+    margin-top: 90px;
+
+    position: relative;
+    z-index: 5;
+}
+
+.content h1 {
+    font-size: 75px;
+
+    line-height: 0.9;
+
+    font-weight: 500;
+
+    letter-spacing: -4px;
+}
+
+
+/* Main Buttons */
+
+.buttons {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+.dark-button,
+.white-button {
+    padding: 12px 17px;
+
+    border-radius: 25px;
+
+    font-size: 8px;
+
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.dark-button {
+    background: #06172d;
+
+    color: white;
+}
+
+.white-button {
+    background: white;
+
+    color: #1264d8;
+}
+
+
+/* Person Image */
+
+.person {
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+
+    width: 55%;
+    height: 85%;
+
+    z-index: 2;
+}
+
+.person img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    object-position: bottom right;
+}
+
+
+/* Banking Card */
+
+.card {
+    position: absolute;
+
+    right: 0;
+    top: 35%;
+
+    width: 180px;
+
+    background: white;
+
+    color: #111;
+
+    padding: 15px;
+
+    border-radius: 8px 0 0 8px;
+
+    z-index: 6;
+}
+
+
+/* Card Header */
+
+.card-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 7px;
+
+    color: #777;
+}
+
+
+/* Card Balance */
+
+.card h2 {
+    color: #1264d8;
+
+    font-size: 18px;
+
+    margin: 10px 0;
+}
+
+
+/* Card Line */
+
+.line {
+    height: 4px;
+
+    width: 70%;
+
+    background: #1264d8;
+
+    margin-bottom: 10px;
+}
+
+
+/* Payment Items */
+
+.payment {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 8px 0;
+
+    border-top: 1px solid #eee;
+}
+
+
+/* Payment Icon */
+
+.icon {
+    width: 20px;
+    height: 20px;
+
+    background: #1264d8;
+
+    color: white;
+
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon i {
+    font-size: 8px;
+}
+
+
+/* Payment Details */
+
+.payment div:nth-child(2) {
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.payment b {
+    font-size: 7px;
+}
+
+.payment small {
+    font-size: 6px;
+
+    color: #999;
+
+    margin-top: 2px;
+}
+
+
+/* Payment Amount */
+
+.payment strong {
+    font-size: 7px;
+}
+
+
+/* Green Amount */
+
+.green {
+    color: green;
+}
+
+
+/* Statistics */
+
+.stats {
+    position: absolute;
+
+    left: 7%;
+    bottom: 25px;
+
+    display: flex;
+
+    gap: 45px;
+
+    z-index: 7;
+}
+
+.stats h3 {
+    font-size: 20px;
+
+    font-weight: normal;
+}
+
+.stats p {
+    font-size: 8px;
+
+    margin-top: 5px;
+
+    opacity: 0.8;
+}
+
+/* Why InstaPay Section */
+
+.why-section {
+    width: 100%;
+    padding: 50px 7% 25px;
+    background: white;
+    color: #111;
+}
+
+
+/* Top Content */
+
+.top-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+
+/* Introduction */
+
+.intro {
+    width: 35%;
+}
+
+.intro h3 {
+    color: #1559b5;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.intro p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 300px;
+}
+
+
+/* Explore Button */
+
+.explore-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 140px;
+
+    background: #061329;
+    color: white;
+
+    padding: 11px 12px;
+
+    border-radius: 25px;
+
+    font-size: 8px;
+
+    margin-top: 18px;
+}
+
+
+/* Main Text */
+
+.main-text {
+    width: 55%;
+}
+
+.main-text h1 {
+    font-size: 36px;
+    line-height: 1;
+    letter-spacing: -1.5px;
+}
+
+.main-text h1 span {
+    color: #777;
+}
+
+.main-text > p {
+    color: #666;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 15px;
+    max-width: 500px;
+}
+
+
+/* Features */
+
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 15px;
+}
+
+.features p {
+    font-size: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.features i {
+    color: #1559b5;
+    margin-right: 8px;
+}
+
+
+/* Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+
+/* Image Card */
+
+.cards-image {
+    height: 320px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #ddd;
+}
+
+.cards-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Popular Label */
+
+.popular {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+
+    background: #061329;
+    color: white;
+
+    padding: 7px 10px;
+
+    border-radius: 15px;
+
+    font-size: 7px;
+}
+
+
+/* Image Card Content */
+
+.image-content {
+    position: absolute;
+
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+
+    background: white;
+
+    padding: 15px;
+
+    border-radius: 12px;
+}
+
+.image-content h2 {
+    font-size: 15px;
+}
+
+.image-content p {
+    color: #777;
+    font-size: 9px;
+    line-height: 1.4;
+    margin: 6px 0 10px;
+}
+
+
+/* Card Buttons */
+
+.image-content a,
+.saving-bottom a,
+.business-bottom a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #061329;
+    color: white;
+
+    padding: 10px;
+
+    border-radius: 6px;
+
+    font-size: 8px;
+}
+
+
+/* Saving Card */
+
+.saving-card {
+    height: 320px;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 15px;
+
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Saving Top */
+
+.saving-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.saving-top h2 {
+    color: #1559b5;
+    font-family: Georgia, serif;
+    font-size: 28px;
+}
+
+.saving-top h2 span {
+    font-size: 14px;
+}
+
+.saving-top small {
+    color: #1559b5;
+
+    border: 1px solid #aac4e8;
+
+    padding: 5px 8px;
+
+    border-radius: 15px;
+
+    font-size: 7px;
+}
+
+.apy {
+    font-size: 10px;
+    color: #444;
+    margin-top: 3px;
+}
+
+
+/* Saving Bottom */
+
+.saving-bottom {
+    margin-top: auto;
+}
+
+.saving-bottom h2 {
+    font-size: 15px;
+}
+
+.saving-bottom p {
+    color: #777;
+
+    font-size: 9px;
+
+    line-height: 1.4;
+
+    margin: 7px 0 12px;
+}
+
+
+/* Business Card */
+
+.business-card {
+    height: 320px;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 15px;
+
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Business Top */
+
+.business-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.business-top span {
+    color: #999;
+    font-size: 7px;
+}
+
+
+/* Bank Icon */
+
+.bank-icon {
+    width: 32px;
+    height: 32px;
+
+    border: 1px solid #4a83d5;
+
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #1559b5;
+
+    font-size: 13px;
+}
+
+
+/* Transactions */
+
+.transactions {
+    margin-top: 32px;
+}
+
+.transactions div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 9px;
+
+    margin-bottom: 5px;
+
+    background: #fafafa;
+
+    border-radius: 8px;
+
+    font-size: 9px;
+}
+
+.transactions div:nth-child(2) {
+    background: #f0f4fb;
+}
+
+.transactions small {
+    color: #888;
+}
+
+
+/* Business Bottom */
+
+.business-bottom {
+    margin-top: auto;
+}
+
+.business-bottom h2 {
+    font-size: 15px;
+}
+
+.business-bottom p {
+    color: #777;
+
+    font-size: 9px;
+
+    line-height: 1.4;
+
+    margin: 7px 0 12px;
+}
+
+
+/* Bottom Line */
+
+.bottom-line {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.bottom-line span,
+.bottom-line small {
+    color: #777;
+    font-size: 8px;
+    white-space: nowrap;
+}
+
+.bottom-line div {
+    height: 2px;
+
+    background: #e5e5e5;
+
+    flex: 1;
+
+    position: relative;
+}
+
+.bottom-line div::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 35%;
+    height: 2px;
+
+    background: #1559b5;
+}
+/* Switch Bank Section */
+
+.switch-section {
+    padding: 70px 9% 100px;
+    background: white;
+}
+
+
+.switch-content {
+    max-width: 1000px;
+    margin: auto;
+
+    background: #1264c4;
+    color: white;
+
+    border-radius: 22px;
+
+    padding: 45px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 50px;
+}
+
+
+/* Switch Left */
+
+.switch-left {
+    width: 50%;
+}
+
+
+.switch-left h1 {
+    font-size: 30px;
+    line-height: 1.1;
+
+    letter-spacing: -1.5px;
+
+    margin-bottom: 18px;
+}
+
+
+.switch-left p {
+    font-size: 11px;
+
+    line-height: 1.5;
+
+    color: #dceaff;
+
+    max-width: 350px;
+}
+
+
+/* Switch Buttons */
+
+.switch-buttons {
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 25px;
+}
+
+
+.switch-dark-button,
+.switch-white-button {
+    padding: 11px 16px;
+
+    border-radius: 25px;
+
+    font-size: 8px;
+
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.switch-dark-button {
+    background: #06172d;
+
+    color: white;
+}
+
+
+.switch-white-button {
+    background: white;
+
+    color: #111;
+}
+
+
+/* Switch Right */
+
+.switch-right {
+    width: 42%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 13px;
+}
+
+
+.switch-step {
+    background: white;
+
+    color: #111;
+
+    height: 40px;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 15px;
+
+    gap: 12px;
+}
+
+
+.switch-step span {
+    color: #777;
+
+    font-size: 8px;
+}
+
+
+.switch-step p {
+    font-size: 10px;
+
+    font-weight: 500;
+}
+
+
+/* Footer */
+
+.instapay-footer {
+    background: #0d1828;
+
+    color: white;
+
+    border-radius: 30px 30px 0 0;
+
+    padding: 45px 7% 15px;
+
+    margin: 0 12px;
+}
+
+
+/* Footer Top */
+
+.footer-top {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+
+    gap: 30px;
+
+    padding-bottom: 40px;
+}
+
+
+/* Footer About */
+
+.footer-about h2 {
+    font-size: 14px;
+
+    margin-bottom: 12px;
+}
+
+
+.footer-about h2 span {
+    color: #4285d0;
+
+    font-weight: normal;
+}
+
+
+.footer-about p {
+    color: #aeb6c1;
+
+    font-size: 9px;
+
+    line-height: 1.5;
+}
+
+
+/* Footer Columns */
+
+.footer-column {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+
+.footer-column h3 {
+    font-size: 7px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 5px;
+
+    color: white;
+}
+
+
+.footer-column a {
+    color: #d0d5dc;
+
+    font-size: 9px;
+}
+
+
+.footer-column a:hover {
+    color: white;
+}
+
+
+/* Footer Bottom */
+
+.footer-bottom {
+    border-top: 1px solid #25303e;
+
+    padding-top: 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.footer-bottom p {
+    color: #737d8a;
+
+    font-size: 7px;
+
+    line-height: 1.5;
+}
+
+
+.footer-links {
+    display: flex;
+
+    gap: 18px;
+
+    white-space: nowrap;
+}
+
+
+.footer-links a {
+    color: #9ca5b1;
+
+    font-size: 8px;
+}
+
+
+@media (max-width: 768px) {
+
+    /* Hero */
+    .hero {
+        height: auto;
+        min-height: 750px;
+        padding: 15px 5%;
+    }
+
+    /* Header */
+    .header {
+        height: auto;
+        min-height: 50px;
+        padding: 10px 15px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 13px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .account-button {
+        margin-left: auto;
+        font-size: 7px;
+        padding: 9px 12px;
+    }
+
+    /* Hero Content */
+    .content {
+        margin-top: 70px;
+    }
+
+    .content h1 {
+        font-size: 48px;
+        letter-spacing: -2px;
+    }
+
+    .buttons {
+        flex-wrap: wrap;
+    }
+
+    /* Banking Card */
+    .card {
+        top: auto;
+        right: 5%;
+        bottom: 100px;
+        width: 170px;
+    }
+
+    /* Statistics */
+    .stats {
+        left: 5%;
+        bottom: 25px;
+        gap: 25px;
+    }
+
+    .stats h3 {
+        font-size: 16px;
+    }
+
+    .stats p {
+        font-size: 7px;
+    }
+
+
+    /* Why Section */
+    .why-section {
+        padding: 40px 5% 25px;
+    }
+
+    .top-content {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .intro,
+    .main-text {
+        width: 100%;
+    }
+
+    .intro h3 {
+        font-size: 20px;
+    }
+
+    .main-text h1 {
+        font-size: 30px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Cards */
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .cards-image,
+    .saving-card,
+    .business-card {
+        height: 300px;
+    }
+
+
+    /* Switch Section */
+    .switch-section {
+        padding: 50px 5px 70px;
+    }
+
+    .switch-content {
+        width: 90%;
+        padding: 35px 25px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 35px;
+    }
+
+    .switch-left,
+    .switch-right {
+        width: 100%;
+    }
+
+    .switch-left h1 {
+        font-size: 27px;
+    }
+
+    .switch-buttons {
+        flex-wrap: wrap;
+    }
+
+
+    /* Footer */
+    .instapay-footer {
+        margin: 0 6px;
+        padding: 35px 5% 15px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .footer-about {
+        grid-column: 1 / -1;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-links {
+        gap: 15px;
+    }
+}
+
+
+/* Small Phones */
+@media (max-width: 480px) {
+
+    .hero {
+        min-height: 720px;
+    }
+
+    .header {
+        padding: 9px 12px;
+    }
+
+    .content {
+        margin-top: 60px;
+    }
+
+    .content h1 {
+        font-size: 40px;
+        letter-spacing: -2px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dark-button,
+    .white-button {
+        width: fit-content;
+    }
+
+    .card {
+        width: 155px;
+        right: 5%;
+        bottom: 105px;
+    }
+
+    .stats {
+        gap: 18px;
+    }
+
+    .stats h3 {
+        font-size: 14px;
+    }
+
+    .stats p {
+        font-size: 6px;
+    }
+
+    .main-text h1 {
+        font-size: 26px;
+    }
+
+    .cards-image,
+    .saving-card,
+    .business-card {
+        height: 280px;
+    }
+
+    .switch-content {
+        width: 92%;
+        padding: 30px 20px;
+    }
+
+    .switch-left h1 {
+        font-size: 24px;
+    }
+
+    .switch-buttons {
+        flex-direction: column;
+    }}
